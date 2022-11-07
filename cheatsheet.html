@@ -149,16 +149,77 @@
                 <td>28</td>
             </tr>
         </tbody>
+        <!-- El footer en las tablas no es muy usual pero puede aparecer -->
+        <tfoot>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </tfoot>
         
     </table>
-
+<hr>
     <!-- Formularios/Forms -->
 
     <form action="" method="get">
-        <input type="text">
+        <!-- container para nombre -->
+        <div class="inputbnb"> <!--englobamos el input completo en un div por si en un futuro queremos modificar algo con css lo podemos hacer con todos los elementos a la vez-->
+            <label for="nameinput">Name: *</label> <br> <!--el name puede repetirse para otros elementos, mientas que el id es unico del elemento de este formulario por ejemplo-->
+            <input required type="text" id="nameinput" name="user name" placeholder="introduce tu Nombre">
+        </div><br>
+
+        <!-- container para Apellido -->
+        <div class="inputbnb"> 
+            <label for="lastnameinput">Apellido:</label> <br> 
+            <input type="text" id="lastnameinput" name="user surname" placeholder="introduce tu Apellido">
+        </div><br>
+
+        <!-- container para Email -->
+        <div class="inputbnb"> 
+            <label for="Emailinput">Email: *</label> <br> 
+            <input required type="text" id="Emailinput" name="userEmail" placeholder="introduce tu Email">
+        </div><br>
+
+        <!-- container para pass  -->
+        <div class="inputbnb"> 
+            <label for="passinput">Password:</label> <br> 
+            <input type="password" id="passinput" name="userEmail" placeholder="introduce tu password">
+        </div><br>
+        <!-- container de comentarios -->
+        <div class="inputbnb"> 
+            <label for="comentsinput">Coments:</label> <br> 
+            <textarea name="comentarios" id="comentsinput" cols="30" rows="10" placeholder="Escriba mensaje"></textarea>
+        </div><br>
+
+
+        <div class="inputbnb">
+
+            <!-- cuadro de elecciones para genero / la etiqueta hidden sirve para ocultar la primera eleccion, que no aparezca y de la sensacion de que no hay un valor default -->
+            <label for="sex">Genero:</label> <br>
+            <select name="sexinput" id="sex">
+                <option value=""hidden></option>
+                <option value="Female">Femenino</option>
+                <option value="Male">Masculino</option>
+                <option value="Other">Otro</option>
+
+            </select>
+
+        </div><br>
+
+        <!-- linea para generar un input con la edad por ejemplo / la etiqueta name hay que ponerla siempre sino no enviara esta info a nuestro servidor -->
+        <input type="number" name="age" placeholder="Edad" id="age"  min="0" max="120"><br><br>
+        
+        <!-- linea para generar fecha -->
+        <input type="date" name="fecha" id="fecha"><br><br>
+
+        <!-- linea input para generar un button de enviar info -->
+        <input type="submit" value="Enviar">
+
+        
     </form>
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
-</html>
+</html>text
