@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cheatsheet</title>
 </head>
+
 <body>
     <!-- Elances internos y externos -->
-     <a target="_blank" href="https://google.com">enlace a google</a>
-     <a href="blog.html">Blog</a>
+    <a target="_blank" href="https://google.com">enlace a google</a>
+    <a href="blog.html">Blog</a>
 
-    <!-- Espacio en blanco --> 
+    <!-- Espacio en blanco -->
     <br>
 
     <!-- Linea separadora -->
@@ -25,9 +27,138 @@
     <h5>Titulo 5</h5>
     <h6>Titulo 6</h6>
 
-    <hr>
+<hr>
     <!-- textos/parrafos/paragraphs -->
-    
+    <!-- la etiqueta b tiene poca importancia y la strong le da mucha importancia a lo que contiene a la hora de las busquedas -->
+    <!-- la etiquete s es simplemente visual para el usuario y lo tacha -->
+    <p>
+        Lorem ipsum dolor <b>sit amet consectetur</b> adipisicing
+        mollitia, <s><strong>labore quam accusantium</strong></s> sapiente molestias
+    </p>
+    <pre>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        <s>Corporis aliquam ratione</s> quos quod suscipit distinctio error eveniet in minus ea. 
+        Ea quidem harum eligendi labore excepturi! Quasi labore illo aperiam.
+    </pre>
 
+    <!-- en la etiqueta span podemos aislar una parte de un texto que queramos para usarlo de la manera que prefiramos mas adelante.  -->
+
+    <p>
+        <span id="ingredients">Lorem ipsum dolor, sit amet</span> consectetur adipisicing elit. Debitis repellat iste
+        tenetur quae, laudantium labore
+        ratione eaque quis eius sit. c<sub>8</sub>h<sub>10</sub>n<sub>4</sub>O<sub>2</sub>
+    </p>
+
+    <!-- la etiqueta var y sub sirven sobre todo para dar una representacion mas cientifica/matematica al texto -->
+
+    <p>el teorema de Pitágoras se representa comúnmente como:</p>
+    <p><var>a</var> <sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup>
+
+        <!-- Utilizar el comando wrap cuando seleccionemos cualquier texto para modificarlos conjuntamente -->
+
+    <p>las clases del bootcamp empiezan a las <time datetime="09:30">09:30</time></p>
+    <p>el primer dia fue el <time datetime="2022-02-01">1 de febrero</time></p>
+
+<hr>
+    <!-- Contenedores/Containers -->
+    <!-- nav>a*3{Enlace $} podemos ponerle un punto a nav para que nos cree una clase y justo depues el nombre de la clase. -->
+
+    <nav>
+        <a href="">enlace 1</a>
+        <a href="">enlace 2</a>
+        <a href="">enlace 3</a>
+        <button>Login</button>
+    </nav>
+
+    <section>
+        <article>
+            <h1>Titulo del articulo</h1>
+            <p>contenido del articulo</p>
+        </article>
+        <a href="">leer mas</a>
+    </section>
+    <!-- el aside en html no nos lo pone a la derecha simplemente le da el sentido de que ira en un lateral -->
+    <aside>
+        <p>Menus laterales usando aside</p>
+    </aside>
+
+    <footer>
+        <p>pie de pagina</p>
+        <address>
+            Direccion
+        </address>
+    </footer>
+
+    <div class="container">
+        <p>contendor generico</p>
+    </div>
+
+    <!-- listas/list  -->
+
+    <!-- unorder list (ul) -->
+    <ul>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+        <li>elemento 5</li>
+    </ul>
+    <!-- Order list  -->
+    <ol>
+        <li>elemento</li>
+        <li>elemento
+            <ul>
+                <li>elemento</li>
+                <li>elemento</li>
+            </ul>
+        </li>
+        <li>elemento</li>
+    </ol>
+
+    <ol start="500">
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+    </ol>
+ <hr>
+    <!-- Tablas/Tables  -->
+    <table>
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Alberto</td>
+                <td>Alberto@gmail.com</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>mario</td>
+                <td>mario@gmail.com</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>jesus</td>
+                <td>jesus@gmail.com</td>
+                <td>28</td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+    <!-- Formularios/Forms -->
+
+    <form action="" method="get">
+        <input type="text">
+    </form>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
+
 </html>
