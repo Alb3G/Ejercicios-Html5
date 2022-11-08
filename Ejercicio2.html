@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="Register">Register:
+        <fieldset>
+
+            <legend>Informacion personal</legend>
+            <div> <!--Nombre y apellido del usuario-->
+                <label for="inputname">Nombre:</label>
+                <input type="text" id="inputname" name="username" placeholder="Elon">
+                <label for="inputsurname">Apellido:</label>
+                <input type="text" id="inputsurname" name="usersurname" placeholder="Musk">
+            </div><br>
+
+            <div> <!--Edad del usuario-->
+                <label for="inputage">Edad:</label>
+                <input type="number" min="0" max="120">
+            </div><br>
+
+            <div><!--Email del usuario-->
+                <label for="inputEmail">Email:</label>
+                <input type="email" name="userEmail" id="inputEmail" placeholder="nombre@email.com">
+            </div><br>
+
+            <div><!--Pass del usuario-->
+                <label for="inputpass">Password:</label>
+                <input type="password" id="inputpass" name="userpass" placeholder="********">
+            </div><br>
+
+            <fieldset><!--Fieldset de genero-->
+                <legend>Genero:</legend>
+    
+                <div>
+                    <input type="radio" id="femalegenre" name="usergenre">
+                    <label for="femalegenre">Mujer</label>
+                </div>
+    
+                <div>
+                    <input type="radio" id="malegenre" name="usergenre">
+                    <label for="malegenre">Hombre</label>
+                </div>
+    
+                <div>
+                    <input type="radio" id="othergenre" name="usergenre">
+                    <label for="othergenre">Otro</label>
+                </div>
+                
+            </fieldset><br>
+    
+            <div><!--Datalist de paises para el user-->
+                <label for="Country">Pais</label>
+                <input type="text" id="country" name="usercountry" list="countrylist">
+                <datalist id="countrylist">
+                    <option value="Spain">Espana</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Belgium">Belgica</option>
+                    <option value="Germany">Alemania</option>
+                </datalist>
+            </div><br>
+    
+            <div><!--select option del lenguaja de programacion del user-->
+                <label for="programminglanguageinput">Lenguaje de pogramacion:</label>
+                <select name="userprogramminglanguage" id="programminglanguageinput">
+                    <option value=""hidden></option>
+                    <option value="Js">javascript</option>
+                    <option value="Js">python</option>
+                    <option value="Js">php</option>
+                </select>
+            </div><br>
+    
+            <fieldset><!--Fieldset de la academia favorita del user-->
+                <legend>Selecciona tu academia de programacion favorita:</legend>
+    
+                <div>
+                    <input type="radio" id="codespaceacademy" name="useracademy" checked>
+                    <label for="codespaceacademy">Code Space Academy</label>
+                </div>
+    
+                <div>
+                    <input type="radio" id="none1" name="useracademy">
+                    <label for="none1">Ninguna :)</label>
+                </div>
+    
+                <div>
+                    <input type="radio" id="none2" name="useracademy">
+                    <label for="none2">Ninguna :)</label>
+                </div>
+            </fieldset>
+
+        </fieldset><br>
+
+        <div><!--Check box para aceptar recibir correos-->
+            <input type="checkbox" id="emailrecieved" name="useremailaccept">
+            <label for="emailrecieved">Acepto recibir cientos de correos irrelevantes</label>
+        </div>
+
+        <div><!--Checkbox para aceptar los terminos y condiciones-->
+            <input type="checkbox" id="conditions" name="useraceptconditions">
+            <label for="conditions">Acepto los terminos y condiciones</label>
+        </div><br>
+
+        <!-- Butto para enviar form  -->
+        <input type="submit" value="Enviar">
+        <!-- Button para limpiar el form  -->
+        <input type="reset" value="Vaciar formulario">
+        
+
+        
+    </form>
+</body>
+</html>

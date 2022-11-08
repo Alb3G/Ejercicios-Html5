@@ -12,6 +12,7 @@
     <!-- Elances internos y externos -->
     <a target="_blank" href="https://google.com">enlace a google</a>
     <a href="blog.html">Blog</a>
+    <a href="Ejercicio1.html">Ejercicio1.html</a>
 
     <!-- Espacio en blanco -->
     <br>
@@ -202,20 +203,90 @@
                 <option value="Female">Femenino</option>
                 <option value="Male">Masculino</option>
                 <option value="Other">Otro</option>
-
             </select>
 
         </div><br>
 
         <!-- linea para generar un input con la edad por ejemplo / la etiqueta name hay que ponerla siempre sino no enviara esta info a nuestro servidor -->
-        <input type="number" name="age" placeholder="Edad" id="age"  min="0" max="120"><br><br>
-        
-        <!-- linea para generar fecha -->
-        <input type="date" name="fecha" id="fecha"><br><br>
+        <div class="inputbnb">
+            <label for="age">Edad:</label><br>
+            <input type="number" name="age" placeholder="Edad" id="age"  min="0" max="120">
+            
+            <!-- linea para generar fecha -->
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha"><br><br>
+        </div>
+
+        <div>
+            <label for="carbrandinput">marca de coche</label>
+            <input type="text" id="carbrandinput" name="carbrand" list="carbrandlist">
+            <datalist id="carbrandlist">
+                <option value="bmw">bmw</option>
+                <option value="mercedes">mercedes</option>
+                <option value="misubithsi">misubithsi</option>
+                <option value="seat">seat</option>
+            </datalist>
+        </div><br>
+
+        <fieldset disabled> <!--si le ponemos disabled al fieldset nos deshailitara los campos para escribir-->
+            <legend>La leyenda se pondra como Titulo</legend>
+            <!-- Fieldset lo que hace es englobarnos los campos que queramos en un cuadro de forma visual -->
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Estado civil</legend>
+            <div>
+                <input type="radio" id="marriedinput" name="estadocivil">
+                <label for="marrieinput">casado</label> <!--el label esta vez va depues del input para que el check box aparezca a la izq-->
+            </div>
+            <!-- Le ponemos el mismo nombre a los elementos del fieldset para que nos seleccione solamente uno a la hora de mandar la info al servidor  -->
+            <div>
+                <input type="radio" id="singleinput" name="estadocivil" checked>
+                <label for="singleinput">soltero</label> <!--el label esta vez va depues del input para que el check box aparezca a la izq-->
+            </div>
+
+            <div>
+                <input type="radio" id="divorcedinput" name="estadocivil">
+                <label for="divorcedinput">divorciado</label> <!--el label esta vez va depues del input para que el check box aparezca a la izq-->
+            </div>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Estado civil</legend>
+            <div>
+                <input type="checkbox" id="pcinput" name="Pcchoice">
+                <label for="pcinput">Pc</label> <!--el label esta vez va depues del input para que el check box aparezca a la izq-->
+            </div>
+            <!-- Le ponemos el mismo nombre a los elementos del fieldset para que nos seleccione solamente uno a la hora de mandar la info al servidor  -->
+            <div>
+                <input type="checkbox" id="macinput" name="macchoice">
+                <label for="macinput">Mac</label> <!--el label esta vez va depues del input para que el check box aparezca a la izq-->
+            </div>
+
+            <div>
+                <input type="checkbox" id="tabletinput" name="tabletchoice">
+                <label for="tabletinput">Tablet</label> <!--el label esta vez va depues del input para que el check box aparezca a la izq-->
+            </div>
+        </fieldset><br>
+        <!-- barra con opcion de seleccion de elementos a la cual le pondremos mas adelante algo de javascript para poder ver la cantidad -->
+        <div>
+            <label for="brightnessinput">Brillo:</label>
+            <input type="range" id="brightnessinput">
+        </div><br>
+        <!-- con la etiqueta meter podemos hacer este tipo de medidores como por ejemplo para baterias de movil etc, tambien se puede usar la etiqueta PROGRESS  -->
+        <div>
+            <label for="batterylvl">%bateria</label>
+            <meter id="batterylvl" value="50" min="0" max="100"></meter><br><br>
+        </div><br>
+
+        <!-- Linea para cargar un archivo del equipo y enviarlo -->
+        <label for="fileinput">Enviar un archivo</label>
+        <input type="file" id="fileinput" name="userfile">
 
         <!-- linea input para generar un button de enviar info -->
         <input type="submit" value="Enviar">
-
+        <!-- Linea input para generar un button de limpiar el form -->
+        <input type="reset" value="Limpiar">
         
     </form>
 
