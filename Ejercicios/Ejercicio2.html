@@ -67,14 +67,14 @@
             <div><!--select option del lenguaja de programacion del user-->
                 <label for="programminglanguageinput">Lenguaje de pogramacion:</label>
                 <select name="userprogramminglanguage" id="programminglanguageinput">
-                    <option value=""hidden></option>
                     <option value="Js">javascript</option>
-                    <option value="Js">python</option>
-                    <option value="Js">php</option>
+                    <option value="python">python</option>
+                    <option value="php">php</option>
+                    <option value="kotlin">kotlin</option>
                 </select>
             </div><br>
     
-            <fieldset><!--Fieldset de la academia favorita del user-->
+            <fieldset disabled><!--Fieldset de la academia favorita del user-->
                 <legend>Selecciona tu academia de programacion favorita:</legend>
     
                 <div>
@@ -101,7 +101,7 @@
         </div>
 
         <div><!--Checkbox para aceptar los terminos y condiciones-->
-            <input type="checkbox" id="conditions" name="useraceptconditions">
+            <input type="checkbox" id="conditions" name="useraceptconditions" required>
             <label for="conditions">Acepto los terminos y condiciones</label>
         </div><br>
 
